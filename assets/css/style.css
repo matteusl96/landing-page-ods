@@ -1,0 +1,284 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* INICIO MENU */
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#727272;
+    
+    
+}
+nav .active a,
+nav a:hover {
+    background-color: #3D7E42;
+    color: #FFFFFF;
+}
+/* FIM MENU */
+
+
+/* INICIO SESSOES */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7bb881;
+    color: #fff;
+    -webkit-text-stroke-color: #727272;
+    -webkit-text-stroke-width: 0.1px;
+    padding-top: 100px;
+    min-height: calc(100vh - 100px)
+  }
+
+  section {
+    max-width: 900px;
+    padding: 40px 20px;
+    background-color: #3D7E42;
+  }
+
+  h1 {
+    margin: 40px;
+    font-size: 42px;
+    color: #f0eaea;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 32px;
+    color: #f0eaea;
+  }
+
+  p {
+    margin: 10px;
+    font-size: 24px;  
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 25px;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #6ac0eb;
+  }
+
+  #banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner img {
+      max-width: 50%;
+      max-height: 50%;
+  }
+
+  #section-1, #section-2, #section-3 {
+      max-width: 900px;
+      padding: 0;
+      margin: 0;
+  }
+  .sessao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px ;
+  }
+  
+  .content {
+    max-width: 900px;
+    min-height: 600px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .moldura {
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 1em black;
+    margin-bottom: 200px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 110px;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .imagem {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    align-items: center;
+  }
+  
+  .article-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+  
+  .subtitulo {
+    margin-bottom: 20px;
+  }
+
+#section-4 {
+  max-width: 900px;
+  text-align: center;
+  font-style: italic; 
+  display: flex;
+  flex-direction: column;
+  padding-bottom:100px;
+ }
+
+
+/* RODAPE */
+  footer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+	color: #727272;
+	font-size: 18px;
+	height: 80px;
+}
+
+footer a {
+  color: #39aae1;
+}
+
+/* RESPONSIVIDADE */
+
+/* MENU MOBILE */
+
+.menuMobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.mm_line {
+   height: 4px;
+   background-color: #39aae1
+}
+
+@media (max-width: 990px) {
+
+  header .container {
+      flex-direction: row;
+  }
+
+  nav ul {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: #FFFFFF;
+  }
+
+  header {
+      height: auto;
+  }
+
+  .logo {
+      padding-left: 20px;
+  }
+
+  .menuMobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+}
+
+@media (max-width: 870px) {
+  .content {
+    min-height: auto;
+  }
+  .sessao {
+    flex-direction: column;
+    min-height: auto;
+  }
+ 
+  .footer {
+    min-height: auto
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
